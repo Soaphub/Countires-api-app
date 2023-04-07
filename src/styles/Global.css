@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --margin-lg: 5rem;
+    --margin-md: 3rem;
+    --margin-sm: 1.5rem;
+
+    --font-size-lg: 2.7rem;
+    --font-size-md: 1.5rem;
+    --font-size-sm: 1.25rem;
+
+    /* =========
+        Mode Theme 
+        ==========*/
+    --light-text-color: hsl(200, 15%, 8%);
+    --light-background-color: hsl(0, 0%, 95%);
+    --light-element-color: white;
+    --light-box-shadow: 5px 5px 7px hsl(0, 0%, 85%);
+    --light-border-color: hsl(0, 0%, 95%);
+
+    --dark-text-color: white;
+    --dark-background-color: hsl(207, 26%, 17%);
+    --dark-element-color: hsl(209, 23%, 22%);
+    --dark-box-shadow: 5px 5px 7px hsl(200, 15%, 8%);
+    --dark-border-color: hsl(207, 26%, 17%);
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--text-color);
+}
+
+h1{
+    font-size: var(--font-size-md);
+    font-weight: 800;
+}
+
+h2{
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+}
+
+p{
+    display: inline;
+    font-size: var(--font-size-sm);
+    font-weight: 300;
+}
+
+.content{
+    padding: var(--margin-lg);
+    background-color: var(--background-color);
+}
+
+/* ==============
+    Error message div 
+    ===============*/
+.message{
+    padding: var(--margin-lg) 0;
+}
+.message > h1{
+    font-size: var(--font-size-lg);
+    font-weight: 800;
+    text-align: center;
+}
+
+/* ==========
+    Mode  Theme 
+    ============*/
+
+@media (prefers-color-scheme: light){
+    :root  
+    {
+        --text-color: var(--light-text-color);
+        --background-color: var(--light-background-color);
+        --element-color: var(--light-element-color);
+        --box-shadow: var(--light-box-shadow);
+        --border-color: var(--light-border-color);
+    }
+
+}
+[color-scheme = "light"]{
+    --text-color: var(--light-text-color);
+    --background-color: var(--light-background-color);
+    --element-color: var(--light-element-color);
+    --box-shadow: var(--light-box-shadow);
+    --border-color: var(--light-border-color);
+}
+@media (prefers-color-scheme: dark){
+    :root{
+        --text-color: var(--dark-text-color);
+        --background-color: var(--dark-background-color);
+        --element-color: var(--dark-element-color);
+        --box-shadow: var(--dark-box-shadow);
+        --border-color: var(--dark-border-color);
+    }
+} 
+[color-scheme = "dark"]{
+    --text-color: var(--dark-text-color);
+    --background-color: var(--dark-background-color);
+    --element-color: var(--dark-element-color);
+    --box-shadow: var(--dark-box-shadow);
+    --border-color: var(--dark-border-color);
+}
+
+
+@media (max-width: 575.98px) {
+    :root{
+    --margin-lg: 1.5rem;
+    --margin-md: 1rem;
+    --margin-sm: 0.5rem;
+
+    --font-size-lg: 1.25rem;
+    --font-size-md: 0.85rem;
+    --font-size-sm: 0.8rem;
+    }
+    .content{
+        padding: var(--margin-md) 16px;
+    }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    :root{
+    --margin-lg: 2.25rem;
+    --margin-md: 1.25rem;
+    --margin-sm: 0.85rem;
+
+    --font-size-lg: 1.75rem;
+    --font-size-md: 1.10rem;
+    --font-size-sm: 1rem;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    :root{
+    --margin-lg: 2.5rem;
+    --margin-md: 1.5rem;
+    --margin-sm: 0.9rem;
+
+    --font-size-lg: 2rem;
+    --font-size-md: 1.25rem;
+    --font-size-sm: 1.10rem;
+    } 
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    :root{
+    --margin-lg: 2.75rem;
+    --margin-md: 1.75rem;
+    --margin-sm: 1rem;
+
+    --font-size-lg: 2.3rem;
+    --font-size-md: 1.1rem;
+    --font-size-sm: 1rem;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    :root{
+    --margin-lg: 3.5rem;
+    --margin-md: 2.5rem;
+    --margin-sm: 1.25rem;
+
+    --font-size-lg: 2.5rem;
+    --font-size-md: 1.3rem;
+    --font-size-sm: 1.05rem;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) { 
+    :root{
+    --margin-lg: 4.5rem;
+    --margin-md: 2.5rem;
+    --margin-sm: 1.5rem;
+
+    --font-size-lg: 2.6rem;
+    --font-size-md: 1.4rem;
+    --font-size-sm: 1.15rem;
+    }
+}
+
