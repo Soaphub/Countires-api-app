@@ -48,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-Learned to chnage nested object to an array
+Learned to change nested object to an array
 
 ```js
 const handleCurrency=(myObj)=>{
