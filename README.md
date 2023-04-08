@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Soaphub/Countires-api]
+- Solution URL: [https://github.com/Soaphub/Countires-api-app]
 - Live Site URL: [https://soaphub.github.io/Countires-api-app/#/]
 
 ## My process
